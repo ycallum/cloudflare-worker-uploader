@@ -1,0 +1,10 @@
+name = "cloudflare-worker-uploader"
+main = "src/index.ts"
+compatibility_date = "2023-05-18"
+
+[vars]
+ROOT_CDN_URL = "https://cdn.example.com"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "your-bucket-name"
